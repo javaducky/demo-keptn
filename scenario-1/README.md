@@ -148,9 +148,15 @@ and `app.kubernetes.io/version` label in the `keptn-app.yaml` and `nginx.deploym
 
 Push the changes to both files using the following:
 ```shell
-kubectl apply -f scenario-1/nginx.deployment-solution.yaml -f scenario-1/keptn-app.yaml 
+kubectl apply -f scenario-1/nginx.deployment.yaml -f scenario-1/keptn-app.yaml 
 ```
 
 Watching the pods available in the `scenario-1` namespace should activity as the deployment is being rolled out.
 Additionally, a pod like `klc-post-dump-values-...` should be created with the results of your task. Drilling into 
 the pod logs should show the values from the script.
+
+### Step 8: Cleaning up
+Remove our resources to keep things tidy. Use `kubectl` to delete the instances using the following:
+```shell
+kubectl delete -f scenario-1/keptn-task-dump-values.yaml -f scenario-1/keptn-app.yaml -f scenario-1/nginx.deployment.yaml
+```
