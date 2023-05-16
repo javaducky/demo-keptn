@@ -58,9 +58,9 @@ cluster has the `certificate-operator`, `lifecycle-operator`, `metrics-operator`
 ## Scenarios
 We'll walk through multiple examples using the lifecycle toolkit. All scenarios will depend upon the preceding installation step.
 
-| Scenario   | Description                                        |
-|------------|----------------------------------------------------|
-| scenario-1 | Create a basic application with a post-deploy task |
+| Scenario                  | Description                                       |
+|---------------------------|---------------------------------------------------|
+| [scenario-1](scenario-1/) |Create a basic application with a post-deploy task |
 
 ## Resources
 - https://github.com/keptn/lifecycle-toolkit
