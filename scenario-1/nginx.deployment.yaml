@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: scenario-1
+  annotations:
+    keptn.sh/lifecycle-toolkit: "enabled"
 
 ---
 apiVersion: apps/v1
@@ -20,6 +22,12 @@ spec:
     metadata:
       labels:
         app: nginx
+        # Adding the following labels for Keptn application
+        app.kubernetes.io/part-of: my-application
+        app.kubernetes.io/name: nginx-deployment
+        app.kubernetes.io/version: 0.1.0
+        # Execute the `dump-values` task after deployment
+        keptn.sh/post-deployment-tasks: "dump-values"
     spec:
       containers:
       - name: nginx

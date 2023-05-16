@@ -1,0 +1,13 @@
+apiVersion: lifecycle.keptn.sh/v1alpha3
+kind: KeptnTaskDefinition
+metadata:
+  name: check-frontend-available
+  namespace: scenario-2
+spec:
+  function:
+    httpRef:
+      # Let's reuse the simple script available in the Keptn samples.
+      url: https://raw.githubusercontent.com/keptn/lifecycle-toolkit/main/functions-runtime/samples/ts/http.ts
+    parameters:
+      map:
+        url: http://podtato-head-frontend.scenario-2.svc.cluster.local:8080

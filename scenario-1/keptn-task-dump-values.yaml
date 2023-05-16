@@ -1,0 +1,18 @@
+apiVersion: lifecycle.keptn.sh/v1alpha3
+kind: KeptnTaskDefinition
+metadata:
+  name: dump-values
+  namespace: scenario-1
+spec:
+  function:
+    inline:
+      code: |
+        const vars = ["CONTEXT","DATA","SECURE_DATA"]
+        let value;
+        vars.forEach((element) => {
+          value = Deno.env.get(element);
+          if (value != undefined) {
+            console.log(element + ":");
+            console.log(value);
+          }
+        });
