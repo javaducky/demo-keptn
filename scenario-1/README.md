@@ -142,6 +142,11 @@ metadata:
     keptn.sh/lifecycle-toolkit: "enabled"
 ```
 
+Update the resource in your cluster once again:
+```shell
+kubectl apply -f scenario-1/nginx.deployment.yaml
+```
+
 ### Step 7: Perform a deployment update
 For our example, we'll simulate an upgrade to our nginx service. We'll do this by updating the value for the workload version
 and `app.kubernetes.io/version` label in the `keptn-app.yaml` and `nginx.deployment.yaml` resources, respectively.

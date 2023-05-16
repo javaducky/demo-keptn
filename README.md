@@ -4,10 +4,10 @@ Demonstration project for the ["Creating Reliability Pipelines With Keptn Qualit
 ([Video](https://www.youtube.com/watch?v=5u6GJIU0oi8))talk, originally presented to the _Kubernetes & Cloud Native STL_
 meetup group.
 
-> Please don't be confused by the original title.
+> ### Please don't be confused by the original title.
 > 
-> The original concept for the talk was to cover what is now known as Keptn v1. Upon researching the topic, it was decided
-> to pivot to the future of Keptn, i.e. the Keptn Lifecycle Toolkit (KLT). The KLT is considered the cloud native
+> The original concept for the talk was to cover what is now known as [Keptn v1](https://keptn.sh/). Upon researching the topic, it was decided
+> to pivot to the future of Keptn, i.e. the [Keptn Lifecycle Toolkit (KLT)](https://lifecycle.keptn.sh/). The KLT is considered the cloud native
 > approach for orchestrating deployments with Keptn and is the direction of the project going forward.
 
 ## Prerequisites
@@ -64,9 +64,9 @@ cluster has the `certificate-operator`, `lifecycle-operator`, `metrics-operator`
 ## Scenarios
 We'll walk through multiple examples using the lifecycle toolkit. All scenarios will depend upon the preceding installation step.
 
-| Scenario                  | Description                                       |
-|---------------------------|---------------------------------------------------|
-| [scenario-1](scenario-1/) |Create a basic application with a post-deploy task |
+| Scenario                  | Description                                                                |
+|---------------------------|----------------------------------------------------------------------------|
+| [scenario-1](scenario-1/) | Enable Keptn orchestration for a basic application with a post-deploy task |
 
 ## Resources
 - https://github.com/keptn/lifecycle-toolkit
