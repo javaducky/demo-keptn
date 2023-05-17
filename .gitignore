@@ -2,3 +2,5 @@
 # Don't commit your private env settings
 .idea/
 .env
+
+**/slack-secret.yaml

@@ -67,6 +67,7 @@ We'll walk through multiple examples using the lifecycle toolkit. All scenarios 
 | Scenario                  | Description                                                                |
 |---------------------------|----------------------------------------------------------------------------|
 | [scenario-1](scenario-1/) | Enable Keptn orchestration for a basic application with a post-deploy task |
+| [scenario-2](scenario-2/) | Work with an application having multiple services                          |
 
 ## Resources
 - https://github.com/keptn/lifecycle-toolkit
