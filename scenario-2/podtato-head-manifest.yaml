@@ -31,16 +31,16 @@ spec:
         image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
         resources:
           requests:
-            memory: "32Mi"
-            cpu: "100m"
+            memory: "16Mi"
+            cpu: "5m"
           limits:
-            memory: "128Mi"
-            cpu: "500m"
+            memory: "64Mi"
+            cpu: "25m"
         env:
           - name: PODTATO_COMPONENT
             value: "frontend"
           - name: PODTATO_STARTUP_DELAY
-            value: "20s"
+            value: "5s"
           - name: PODTATO_VERSION
             valueFrom:
               fieldRef:
@@ -96,11 +96,11 @@ spec:
           image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "100m"
+              memory: "8Mi"
+              cpu: "5m"
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "32Mi"
+              cpu: "25m"
           env:
             - name: PODTATO_COMPONENT
               value: "left-arm"
@@ -150,11 +150,11 @@ spec:
           image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "100m"
+              memory: "8Mi"
+              cpu: "5m"
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "32Mi"
+              cpu: "25m"
           env:
             - name: PODTATO_COMPONENT
               value: "right-arm"
@@ -204,11 +204,11 @@ spec:
           image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "100m"
+              memory: "8Mi"
+              cpu: "5m"
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "32Mi"
+              cpu: "25m"
           env:
             - name: PODTATO_COMPONENT
               value: "left-leg"
@@ -258,11 +258,11 @@ spec:
           image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "100m"
+              memory: "8Mi"
+              cpu: "5m"
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "32Mi"
+              cpu: "25m"
           env:
             - name: PODTATO_COMPONENT
               value: "right-leg"
@@ -312,11 +312,11 @@ spec:
           image: ghcr.io/podtato-head/podtato-server:v0.3.2 #x-release-please-version
           resources:
             requests:
-              memory: "32Mi"
-              cpu: "100m"
+              memory: "8Mi"
+              cpu: "5m"
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "32Mi"
+              cpu: "25m"
           env:
             - name: PODTATO_COMPONENT
               value: "hat"
