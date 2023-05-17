@@ -1,6 +1,16 @@
-
 # Don't commit your private env settings
 .idea/
+.vscode/
 .env
 
+# We don't want to leak secrets!
 **/slack-secret.yaml
+
+# Ignore temp files
+*~
+*.swp
+.DS_Store
+
+# Like to make copies of original before modifying?  Name it with .OLD or .BACKUP extension
+**/*.OLD
+**/*.BACKUP

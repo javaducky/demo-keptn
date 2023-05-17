@@ -39,6 +39,12 @@ spec:
         env:
           - name: PODTATO_COMPONENT
             value: "frontend"
+          - name: PODTATO_STARTUP_DELAY
+            value: "20s"
+          - name: PODTATO_VERSION
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.labels['app.kubernetes.io/version']
           - name: SERVICES_CONFIG_FILE_PATH
             value: /config/servicesConfig.yaml
           - name: POD_NAME
@@ -102,6 +108,10 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: PODTATO_VERSION
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['app.kubernetes.io/version']
           ports:
             - name: http
               containerPort: 8080
@@ -152,6 +162,10 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: PODTATO_VERSION
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['app.kubernetes.io/version']
           ports:
             - name: http
               containerPort: 8080
@@ -202,6 +216,10 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: PODTATO_VERSION
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['app.kubernetes.io/version']
           ports:
             - name: http
               containerPort: 8080
@@ -252,6 +270,10 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: PODTATO_VERSION
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['app.kubernetes.io/version']
           ports:
             - name: http
               containerPort: 8080
@@ -302,6 +324,10 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
+            - name: PODTATO_VERSION
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels['app.kubernetes.io/version']
           ports:
             - name: http
               containerPort: 8080
